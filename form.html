@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>fORM</title>
+    </head>
+<body>
+    <!--everythoing in the body of this page is contained in the first div tag. so we'll give this div an id of container so we can apply css to it.-->
+   <div id="container">
+       <form>
+           <div>
+            <h1>Enter your details here</h1>
+           </div>
+           <div>
+               <!--All the inputs have been given a class of form-group to allow us style it.-->
+               <label for="name">Name:</label><br>
+               <input class="form-group" type="text" name="name" id="name" placeholder="enter your name here">
+           </div>
+           <!-- A div is used to make the input be on a different line as the label. a br tag can also be used for this purpose-->
+           <div>
+               <label for="email">Email:</label><br>
+               <input class="form-group" type="text" name="email" id="email" placeholder="enter your email">
+           </div>
+           <div>
+               <label for="password">Password</label><br>
+               <input class="form-group" type="password" name="password" id="password" placeholder="password">
+           </div>
+           <div>
+               <label for="gender">Male</label>
+                   <input type="radio" name="gender" id="male">
+                   <label for="gender">Female</label>
+                   <input type="radio" name="gender" id="female" >
+                   <div>
+                       <label for="age">18-30</label>
+                       <input type="radio" name="age" id="18-30">
+                       <label for="age">31-40</label>
+                       <input type="radio" name="age" id="31-40">
+                       <label for="age">41-50</label>
+                       <input type="radio" name="age" id="41-50">
+                   </div>
+                   <div>
+                       <h3> My Skills</h3>
+                       <label for="java">Java</label>
+                       <input type="checkbox" name="java" id="java"><br>
+                       <label for="javascript">Javascript</label>
+                       <input type="checkbox" name="javascript" id="javascript"><br>
+                       <label for="java">Html</label>
+                       <input type="checkbox" name="html" id="html"><br>
+                       <div>
+                           <label for="number">Number</label>
+                           <!--a class of form-num is added to this input to allow us style it.-->
+                           <input class="form-num" type="number" name="number" id="number">
+                       </div>
+                       <div>
+                           <label for="about">Tell us about yourself!</label><br>
+                            <!--textarea tag is used to create an input slot that'll allow you put in details. thr rows and cols allows you increase or decrease your text box-->
+                        <textarea 
+                        name="about" 
+                        id="about" 
+                        placeholder="tell us about yourself"
+                         rows="10" 
+                         cols="40"></textarea>
+                            </div>
+                            <div>
+                                <button class="but" type="submit">Submit</button>
+                            </div>
+
+
+                   </div>
+
+               
+           </div>
+       </form>
+   </div>
+    
+</body>
+</html>
